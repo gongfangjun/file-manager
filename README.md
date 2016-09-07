@@ -1,2 +1,2 @@
 # file-manager
-a  file/dir manager for php
+A  file/dir manager for php

@@ -1,0 +1,21 @@
+{
+    "name": "gongfangjun/file-manager",
+    "description": "A file/dir manager for php",
+    "type": "library",
+	"authors": [
+		{
+			"name": "gongfangjun",
+			"email": "hirvassaaret@gmail.com"
+		}
+	],
+    "require": {
+        "php": ">=5.4.0"
+    },
+	"autoload": {
+		"psr-4": {
+			"FileManager": "src/"
+		}
+	},
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
