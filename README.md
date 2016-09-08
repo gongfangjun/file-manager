@@ -40,7 +40,7 @@ add a line to the "require" section in your composer.json,then run the command: 
     	}   
 	}
 
-	scan($rootDir);
+	scan('/data/upload/');
 
 	//delete a file
 	$fm = new FileManager('/data/upload/js/inc/bootstrap.js');
