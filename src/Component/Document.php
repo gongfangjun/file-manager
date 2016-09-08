@@ -13,7 +13,8 @@ class Document
 	public $filesize;
 
 	public function __construct($path)
-	{
+	{	
+		$this->path = $path;
 		$this->setBaseInfo();
 	}
 
