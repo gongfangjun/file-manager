@@ -13,8 +13,8 @@ class Document
 	public $filesize;
 
 	public function __construct($path)
-	{
-		$this->path = method_exists($this, '') ? $this->getPath() : $path;
+	{	
+		$this->path = $path;
 		$this->setBaseInfo();
 	}
 
