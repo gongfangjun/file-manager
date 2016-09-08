@@ -49,3 +49,59 @@ add a line to the "require" section in your composer.json,then run the command: 
 	//delete a dir
 	$fm = new FileManager('/data/upload/js/inc/');
 	$fm->del();
+
+	//read a file
+	$fm = new FileManager('/data/upload/js/index.js');
+	$fm->getContent();
+
+	//write content to a file
+	$fm = new FileManager('/data/upload/js/index.js');
+	$fm->write('var userName = "gongfangjun"');
+
+## property of FileManager\Component\Document
+
+[click here to see the source code](https://github.com/gongfangjun/file-manager/blob/master/src/Component/Document.php)
+
+path
+
+isFile
+
+isDir
+
+isReadable
+
+isWritable
+
+lastVisitTime
+
+lastModTime
+
+filesize
+
+
+## apis
+
+[scan()](https://github.com/gongfangjun/file-manager/blob/master/src/Component/Document.php)
+
+　　　scan a dir
+
+[del()](https://github.com/gongfangjun/file-manager/blob/master/src/Contracts/Reader.php)
+
+　　　del a file or a dir
+
+[write()](https://github.com/gongfangjun/file-manager/blob/master/src/Contracts/Writer.php)
+
+　　　write content to a file
+
+[getContent()](https://github.com/gongfangjun/file-manager/blob/master/src/Contracts/Reader.php)
+
+　　　get content from a file
+
+[createFile()](https://github.com/gongfangjun/file-manager/blob/master/src/Contracts/Writer.php)
+
+　　　create a file
+
+[createDir()](https://github.com/gongfangjun/file-manager/blob/master/src/Contracts/Writer.php)
+
+　　　create a dir
+

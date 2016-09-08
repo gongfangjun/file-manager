@@ -30,10 +30,8 @@ class Document
 			foreach ($dirDocArr as $doc) {
 				$doc->del();
 			}
-			echo 'del dir : ' . $this->path,"\n";
 			return rmdir($this->path);
 		} else {
-			echo 'del file : ' . $this->path,"\n";
 			return unlink($this->path);
 		}
 	}

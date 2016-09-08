@@ -16,4 +16,5 @@ interface Reader
 	 * @return	string	
 	 */
 	public function getContent();
+
 }
