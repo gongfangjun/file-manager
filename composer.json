@@ -1,7 +1,8 @@
 {
     "name": "gongfangjun/file-manager",
     "description": "A file/dir manager for php",
-    "type": "library",
+	"keywords": ["file-manager"],
+    "license": "MIT",
 	"authors": [
 		{
 			"name": "gongfangjun",
@@ -13,9 +14,8 @@
     },
 	"autoload": {
 		"psr-4": {
-			"FileManager": "src/"
+			"FileManager\\": "src/"
 		}
 	},
-    "license": "MIT",
     "minimum-stability": "dev"
 }
