@@ -14,7 +14,6 @@ class Document
 
 	public function __construct($path)
 	{
-		$this->path = method_exists($this, '') ? $this->getPath() : $path;
 		$this->setBaseInfo();
 	}
 
