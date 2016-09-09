@@ -1,8 +1,6 @@
 <?php
 namespace FileManager;
 
-use FileManager\Contracts\Reader;
-
 class FileManager
 {
 	protected $handler;

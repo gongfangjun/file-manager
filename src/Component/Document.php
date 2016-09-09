@@ -11,6 +11,7 @@ class Document
 	public $lastVisitTime;
 	public $lastModTime;
 	public $filesize;
+	public $extName;
 
 	public function __construct($path)
 	{	
@@ -50,6 +51,9 @@ class Document
 			$this->lastModTime = filemtime($this->path);
 			$this->lastVisitTime = fileatime($this->path);
 			$this->filesize = filesize($this->path);
+			$tmpExtNameData = explode('/', $this->path);
+			$tmpExtNameData = explode('.', array_pop($tmpExtNameData));
+			$this->extName = count($tmpExtNameData) > 1 ? array_pop($tmpExtNameData) : '';  
 		}
 	}
 
